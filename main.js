@@ -33,11 +33,11 @@ searchButton.addEventListener('click',function(event)
     console.log('I have clicked the button');
     if (searchInput.classList.contains('show')) {
         searchInput.classList.remove('show');
-        searchIcon.src='/assets/icons/search.svg';
+        searchIcon.src='assets/icons/search.svg';
     }
     else {
         searchInput.classList.add('show');
-        searchIcon.src='/assets/icons/close.svg';
+        searchIcon.src='assets/icons/close.svg';
         searchInput.focus();
     }
 }

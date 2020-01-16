@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DIWhiny</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Caveat:700|Roboto+Slab|Lora:400,700|Work+Sans:400,600&display=swap" rel="stylesheet">
+</head>
+<body class="background-lightbeige">
+    <div class="max-width">
+        <header class="header-size display-flex justify-center">
+            <a class="logo" href="index.html">
+                <h1 class="logo-block">DI</h1>
+                <h1 class="logo-styled">Whiny</h1>
+                <p class="tagline">Practical tips for the reluctant DIYer</p>
+            </a>
+        </header>
+        <nav>
+            <div class="web-menu">
+                <ul>
+                    <li class="mobile-nav-icon">
+                        <img class="mobile-nav" src="/assets/icons/hamburger.svg" alt="">MENU
+                    </li>
+                    <li class="web-nav-item"><a class="web-nav-link" href="./about/index.html">ABOUT</a></li>
+                    <li class="web-nav-item"><a class="web-nav-link" href="./projects/index.html">PROJECTS</a></li>
+                    <li class="web-nav-item"><a class="web-nav-link" href="./wine/index.html">WINE</a></li>
+                    <li class="web-nav-item"><a class="web-nav-link" href="./musings/index.html">MUSINGS</a></li>
+                    <li class="nav-search display-flex">
+                        <input class="search-bar" type="text">
+                        <button class="search">
+                            <img class="search-icon" src="/assets/icons/search.svg" alt="">
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            <div class="mobile-menu"> 
+                <ul class="mobile-menu-list">
+                    <li class="mobile-nav-item"><a class="web-nav-link" href="./about/index.html">ABOUT</a></li>
+                    <li class="mobile-nav-item"><a class="web-nav-link" href="./projects/index.html">PROJECTS</a></li>
+                    <li class="mobile-nav-item"><a class="web-nav-link" href="./wine/index.html">WINE</a></li>
+                    <li class="mobile-nav-item"><a class="web-nav-link" href="./musings/index.html">MUSINGS</a></li>
+                </ul>
+            </div>
+        </nav>
+        <main class="display-flex">
+            <div class="column flex2">
+                <article class="homepage">
+                    <a href="/projects/gingerbread-cookies/">
+                    <h2>The search for homemade gingerbread cookies that aren't hard as rock</h2>
+                    <p>Two recipes go head to head for the title of perfect chewy gingerbread cookie.</p>
+                    <img class="article-photo" src="/assets/photos/gingerbread_project.jpg" alt="Gingerbread Cookies">
+                    </a>
+                </article>
+                <hr>
+                <article class="homepage">
+                    <a href="/projects/selecting-vinyl-flooring/">
+                    <h2>Selecting flooring that's right for you</h2>
+                    <p>Or, whatever, just pick something. They're all brown anyway.</p>
+                    <img class="article-photo" src="/assets/photos/SelectingFlooring.jpeg" alt="Selecting Vinyl Flooring">
+                    </a>
+                </article>
+            </div>
+            <div class="column flex1">
+                <aside class="background-white">
+                    <img src="/assets/photos/diy_stock_image.jpg" alt="DIY Stress">
+                    <div class="aside-text">
+                    <h4>Have a DIY idea you can't wait to hear us whine about?</h4>
+                    <div class="modal-button">
+                        <button class="modal-button">Tell us more</button>
+                    </div>
+                    </div>
+                </aside>
+            </div>
+        </main>
+    </div>
+    <div class="modal-overlay">
+        <div class="modal">
+            <img class = "modal-close" src="/assets/icons/close.svg" alt="Close the modal">
+            <form name="diyIdeas" method="POST" netlify netlify-honeypot="bot-check" action="">    
+                <div class="hidden">
+                    <label for="bot-check"><input type="text" id="bot-check" name="bot-check"></label>
+                </div>  
+                <div>
+                    <div class="display-flex">
+                        <div class="flex1">
+                            <img  src="/assets/photos/diy-drawing.jpg" alt="DIY">
+                        </div>
+                        <div class="display-block flex1 padding10">
+                            <label for="firstName">First Name
+                                <input class="form width100" type="text" id="firstName" name="firstName" required>
+                            </label>
+                            <label for="lastName">Last Name
+                                <input class="form width100" type="text" id="lastName" name="lastName" required>
+                            </label>
+                            <label for="email">Email
+                                <input class="form width100" type="email" id="email" name="email" required>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <label for="diyIdea">Tell us more about your project so we can whine with you
+                        <textarea name="diyIdea" id="diyIdea" cols="55" rows="10" class="width100 no-resize" required></textarea>
+                    </label>  
+                    <div class="submit">
+                        <input type="submit">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer>
+            <div class="display-flex space-between">
+                <div class="setwidth">
+                <ul class="vertical no-bullets">
+                    <li><a class="web-nav-link white" href="./about/index.html">ABOUT</a></li>
+                    <li><a class="web-nav-link white" href="./projects/index.html">PROJECTS</a></li>
+                    <li><a class="web-nav-link white" href="./wine/index.html">WINE</a></li>
+                    <li><a class="web-nav-link white" href="./musings/index.html">MUSINGS</a></li>
+                </ul>
+                </div>
+                <div class="setwidth social">
+                    <h3 class="white">Find us on social media</h3>
+                    <div class="display-flex">
+                        <a href="https://facebook.com" target="_blank"><img class="social-media" src="/assets/icons/facebook.svg" alt="Facebook"></a>                
+                        <div class="small-vertical-line"></div>
+                        <a href="https://twitter.com" target="_blank"><img class="social-media" src="/assets/icons/twitter.svg" alt="Twitter"></a>            
+                    </div>
+                </div>
+            </div>
+    </footer>
+    <script src="wines.js"></script>
+    <script src="pages.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

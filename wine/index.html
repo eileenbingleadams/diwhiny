@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DIWhiny | Wine</title>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css?family=Caveat:700|Roboto+Slab|Lora:400,700|Work+Sans:400,600&display=swap" rel="stylesheet">
+</head>
+<body class="background-lightbeige">
+    <div class="max-width">
+        <header class="header-size display-flex justify-center">
+            <a class="logo" href="../index.html">
+                <h1 class="logo-block">DI</h1>
+                <h1 class="logo-styled">Whiny</h1>
+                <p class="tagline">Practical tips for the reluctant DIYer</p>
+            </a>
+        </header>
+        <nav>
+            <div class="web-menu">
+                <ul>
+                    <li class="mobile-nav-icon">
+                        <img class="mobile-nav" src="/assets/icons/hamburger.svg" alt="">MENU
+                    </li>
+                    <li class="web-nav-item"><a class="web-nav-link" href="../about/index.html">ABOUT</a></li>
+                    <li class="web-nav-item"><a class="web-nav-link" href="../projects/index.html">PROJECTS</a></li>
+                    <li class="web-nav-item"><a class="web-nav-link" href="index.html">WINE</a></li>
+                    <li class="web-nav-item"><a class="web-nav-link" href="../musings/index.html">MUSINGS</a></li>
+                    <li class="nav-search display-flex">
+                        <input class="search-bar" type="text">
+                        <button class="search">
+                            <img class="search-icon" src="/assets/icons/search.svg" alt="">
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            <div class="mobile-menu"> 
+                <ul class="mobile-menu-list">
+                    <li class="mobile-nav-item"><a class="web-nav-link" href="../about/index.html">ABOUT</a></li>
+                    <li class="mobile-nav-item"><a class="web-nav-link" href="../projects/index.html">PROJECTS</a></li>
+                    <li class="mobile-nav-item"><a class="web-nav-link" href="index.html">WINE</a></li>
+                    <li class="mobile-nav-item"><a class="web-nav-link" href="../musings/index.html">MUSINGS</a></li>
+                </ul>
+            </div>
+        </nav>
+    <main>
+        <h2 class="grid-page-title">Explore our Wine Picks</h2>
+        <div class="display-flex">
+         <section class="flex1 wine-filter-section">
+            <h3>Find the right wine for you</h3>
+            <fieldset class="variety">
+            <h3 class="section-header">VARIETY</h3>
+               <input class="wine-checkbox" type="checkbox" name="bubbly" id="bubbly" value="bubbly">Bubbly</input><br>
+               <input class="wine-checkbox" type="checkbox" name="chardonnay" id="chardonnay" value="chardonnay">Chardonnay</input><br>
+               <input class="wine-checkbox" type="checkbox" name="pinotNoir" id="pinotNoir" value="pinotNoir">Pinot Noir</input><br>
+               <input class="wine-checkbox" type="checkbox" name="sauvignonBlanc" id="sauvignonBlanc" value="sauvignonBlanc">Sauvignon Blanc</input>
+            </fieldset>
+            <fieldset class="price">
+               <h3 class="section-header">PRICE</h3>
+                  <input class="wine-checkbox" type="checkbox" name="LT10" id="LT10" value="LT10">Less than $10</input><br>
+                  <input class="wine-checkbox" type="checkbox" name="10-20" id="10-20" value="10-20">$10-20</input><br>
+                  <input class="wine-checkbox" type="checkbox" name="20-40" id="20-40" value="20-40">%20-40</input><br>
+                  <input class="wine-checkbox" type="checkbox" name="GT40" id="GT40" value="GT40">More than $40</input>
+            </fieldset>
+            <fieldset class="region">
+               <h3 class="section-header">REGION</h3>
+                  <input class="wine-checkbox" type="checkbox" name="california" id="california" value="california">California</input><br>
+                  <input class="wine-checkbox" type="checkbox" name="france" id="france" value="france">France</input><br>
+                  <input class="wine-checkbox" type="checkbox" name="italy" id="italy" value="italy">Italy</input><br>
+            </fieldset>
+         </section>
+         <div class="vertical-line"></div>  
+         <div class="flex2 wine-display">
+         </div>
+        </div>
+    </main>
+</div>
+<footer>
+    <div class="display-flex space-between">
+        <div class="setwidth">
+        <ul class="vertical no-bullets">
+            <li><a class="web-nav-link white" href="../about/index.html">ABOUT</a></li>
+            <li><a class="web-nav-link white" href="../projects/index.html">PROJECTS</a></li>
+            <li><a class="web-nav-link white" href="../wine/index.html">WINE</a></li>
+            <li><a class="web-nav-link white" href="../musings/index.html">MUSINGS</a></li>
+        </ul>
+        </div>
+        <div class="setwidth social">
+            <h3 class="white">Find us on social media</h3>
+            <div class="display-flex">
+                <a href="https://facebook.com" target="_blank"><img class="social-media" src="../assets/icons/facebook.svg" alt="Facebook"></a>                
+                <div class="small-vertical-line"></div>
+                <a href="https://twitter.com" target="_blank"><img class="social-media" src="../assets/icons/twitter.svg" alt="Twitter"></a>            
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="../wines.js"></script>
+<script src="../pages.js"></script>
+<script src="../main.js"></script>
+</body>
+</html>
